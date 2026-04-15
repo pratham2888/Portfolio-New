@@ -23,11 +23,6 @@ The chatbot is 100% static — no API key, no backend, no external calls.
 It uses keyword pattern matching against a hardcoded knowledge base about Pratham.
 Topics covered: skills, experience, projects, research, education, contact, job search.
 
-## GitHub Pages Deployment
-
-1. Push all 3 files to a GitHub repo
-2. Go to repo Settings → Pages
-3. Set source to `main` branch, root folder
 4. Your site will be live at `https://yourusername.github.io/repo-name`
 
 > Note: The profile image referenced in the original site (`images/pratham-profile.jpg`) 
