@@ -1,11 +1,129 @@
+/* =========================================
+   RESUME PAGE — Clean Printable Design
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --ink:    #0d1117;
+  --ink2:   #374151;
+  --ink3:   #6b7280;
+  --rule:   #e5e7eb;
+  --accent: #0066cc;
+  --bg:     #f9fafb;
+  --paper:  #ffffff;
+  --font:   'Inter', system-ui, sans-serif;
+  --serif:  'Playfair Display', Georgia, serif;
+}
+
+html { font-size: 62.5%; }
+
 body {
-    text-align: center and justify;
-    margin: auto;
-    width: 100%;
-    padding: 50px;
-    font-family: "times new roman";
-    background-color: white;
-    --nav-height: 50px;
-    padding-top: var(--nav-height);
-    font-size: medium;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  font-size: 1.4rem;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+}
+
+/* ── Top bar ───────────────────────────── */
+.resume-topbar {
+  max-width: 860px; margin: 0 auto 2.4rem;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 1rem;
+}
+.resume-back {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  font-size: 1.3rem; font-weight: 500; color: var(--accent);
+  text-decoration: none; transition: opacity 0.2s;
+}
+.resume-back:hover { opacity: 0.75; }
+.resume-print-btn {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  font-size: 1.3rem; font-weight: 500; color: var(--paper);
+  background: var(--accent); padding: 0.7rem 1.6rem;
+  border-radius: 6px; border: none; cursor: pointer;
+  text-decoration: none; transition: opacity 0.2s;
+}
+.resume-print-btn:hover { opacity: 0.85; }
+
+/* ── Paper ─────────────────────────────── */
+.resume {
+  max-width: 860px; margin: 0 auto;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 5rem 6rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+
+/* ── Header ────────────────────────────── */
+.r-header { text-align: center; margin-bottom: 3rem; border-bottom: 2px solid var(--ink); padding-bottom: 2rem; }
+.r-name { font-family: var(--font); font-size: 2.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink); margin-bottom: 0.8rem; }
+.r-contact { font-size: 1.25rem; color: var(--ink2); display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 1.6rem; }
+.r-contact a { color: var(--accent); text-decoration: none; }
+.r-contact a:hover { text-decoration: underline; }
+.r-sep { color: var(--ink3); }
+
+/* ── Section ───────────────────────────── */
+.r-section { margin-bottom: 2.6rem; }
+.r-section-title {
+  font-size: 1.15rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--ink);
+  border-bottom: 1.5px solid var(--ink); padding-bottom: 0.4rem;
+  margin-bottom: 1.6rem;
+}
+
+/* ── Education row ──────────────────────── */
+.r-edu-row { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.6rem; }
+.r-edu-school { font-weight: 600; font-size: 1.4rem; color: var(--ink); }
+.r-edu-date   { font-size: 1.25rem; color: var(--ink3); white-space: nowrap; }
+.r-edu-degree { font-size: 1.3rem; color: var(--ink2); margin-bottom: 1.4rem; }
+
+/* ── Skills ─────────────────────────────── */
+.r-skills-grid { display: flex; flex-direction: column; gap: 0.7rem; }
+.r-skill-row   { display: grid; grid-template-columns: 22rem 1fr; gap: 1rem; align-items: baseline; }
+.r-skill-cat   { font-weight: 600; font-size: 1.3rem; color: var(--ink); }
+.r-skill-list  { font-size: 1.3rem; color: var(--ink2); }
+
+/* ── Experience entry ───────────────────── */
+.r-job { margin-bottom: 2.2rem; }
+.r-job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.2rem; }
+.r-job-title  { font-weight: 700; font-size: 1.4rem; color: var(--ink); }
+.r-job-meta   { font-size: 1.25rem; color: var(--ink3); white-space: nowrap; }
+.r-job-org    { font-size: 1.3rem; font-weight: 500; color: var(--ink2); margin-bottom: 0.8rem; }
+.r-job ul     { padding-left: 1.6rem; display: flex; flex-direction: column; gap: 0.4rem; }
+.r-job li     { font-size: 1.3rem; color: var(--ink2); line-height: 1.65; }
+.r-job li strong { color: var(--ink); font-weight: 600; }
+
+/* ── Research ───────────────────────────── */
+.r-research { margin-bottom: 1rem; }
+.r-research p { font-size: 1.3rem; color: var(--ink2); line-height: 1.7; }
+.r-research strong { color: var(--ink); font-weight: 600; }
+
+/* ── Projects ───────────────────────────── */
+.r-project { margin-bottom: 1.4rem; }
+.r-project-title { font-weight: 600; font-size: 1.35rem; color: var(--ink); margin-bottom: 0.5rem; }
+.r-project ul { padding-left: 1.6rem; display: flex; flex-direction: column; gap: 0.4rem; }
+.r-project li { font-size: 1.3rem; color: var(--ink2); line-height: 1.65; }
+.r-project a  { color: var(--accent); text-decoration: none; }
+.r-project a:hover { text-decoration: underline; }
+
+/* ── Print ──────────────────────────────── */
+@media print {
+  body { background: white; padding: 0; }
+  .resume { box-shadow: none; border: none; border-radius: 0; padding: 2cm 2.5cm; }
+  .resume-topbar { display: none; }
+  .r-section-title { page-break-after: avoid; }
+  .r-job { page-break-inside: avoid; }
+}
+
+/* ── Responsive ─────────────────────────── */
+@media (max-width: 680px) {
+  .resume { padding: 3rem 2.5rem; }
+  .r-skill-row { grid-template-columns: 1fr; gap: 0.2rem; }
+  .r-skill-cat::after { content: ':'; }
 }

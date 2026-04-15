@@ -1,34 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pratham Sachin Bhanushali | Resume</title>
-    <link rel="stylesheet" href="resume.css" />
-    <link rel="icon" type="image/x-icon" href="images/icon.png" />
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Redirect mobile users to Google Drive
-            if (window.innerWidth <= 768) {
-                window.location.href =
-                    "https://drive.google.com/file/d/1Xzu3MZQym4DV-BEwbqrBFr-jGh66lBX3/view?usp=sharing";
-            }
-        });
-    </script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pratham Bhanushali — Resume</title>
+  <link rel="stylesheet" href="resume.css"/>
 </head>
-
 <body>
-    <div class="resume">
-        <!-- Embed actual resume PDF -->
-        <embed src="Pratham_Bhanushali_resume.pdf/resume.pdf" type="application/pdf" width="100%" height="1000px" />
-    </div>
 
-    <p style="text-align: center; margin-top: 10px">
-        <a href="https://drive.google.com/file/d/1Xzu3MZQym4DV-BEwbqrBFr-jGh66lBX3/view?usp=sharing" target="_blank">
-        Click here to view Pratham's Resume
-      </a>
-    </p>
+  <!-- Top bar -->
+  <div class="resume-topbar">
+    <a href="index.html" class="resume-back">← Back to Portfolio</a>
+    <button class="resume-print-btn" onclick="window.print()">⬇ Print / Save PDF</button>
+  </div>
+
+  <!-- Resume Paper -->
+  <div class="resume">
+
+    <!-- ── Header ───────────────────────── -->
+    <header class="r-header">
+      <div class="r-name">Pratham Bhanushali</div>
+      <div class="r-contact">
+        <span>New York, USA</span>
+        <span class="r-sep">|</span>
+        <a href="mailto:pb3225@stern.nyu.edu">pb3225@stern.nyu.edu</a>
+        <span class="r-sep">|</span>
+        <a href="tel:+16463617216">+1 (646) 361-7216</a>
+        <span class="r-sep">|</span>
+        <a href="index.html" target="_blank">Portfolio</a>
+        <span class="r-sep">|</span>
+        <a href="https://linkedin.com/in/pratham96328" target="_blank">LinkedIn</a>
+        <span class="r-sep">|</span>
+        <a href="https://github.com/pratham2888" target="_blank">GitHub</a>
+      </div>
+    </header>
+
+    <!-- ── Education ─────────────────────── -->
+    <section class="r-section">
+      <div class="r-section-title">Education</div>
+
+      <div class="r-edu-row">
+        <span class="r-edu-school">New York University — Tandon School of Engineering</span>
+        <span class="r-edu-date">Sep 2025 – May 2027 · New York, USA</span>
+      </div>
+      <div class="r-edu-degree">MS in Management of Technology</div>
+
+      <div class="r-edu-row">
+        <span class="r-edu-school">University of Mumbai</span>
+        <span class="r-edu-date">Aug 2020 – May 2024 · Mumbai, India</span>
+      </div>
+      <div class="r-edu-degree">BE in Information Technology</div>
+    </section>
+
+    <!-- ── Skills ────────────────────────── -->
+    <section class="r-section">
+      <div class="r-section-title">Skills</div>
+      <div class="r-skills-grid">
+        <div class="r-skill-row">
+          <span class="r-skill-cat">Programming & Frameworks</span>
+          <span class="r-skill-list">Python, Java, C++, Spring Boot, Django, Flask, React, JavaScript, Pandas, NumPy</span>
+        </div>
+        <div class="r-skill-row">
+          <span class="r-skill-cat">Data Analysis & Visualization</span>
+          <span class="r-skill-list">SQL (PostgreSQL, MySQL), Tableau Desktop, Tableau Prep, Power BI, Advanced Excel (Modeling/KPIs)</span>
+        </div>
+        <div class="r-skill-row">
+          <span class="r-skill-cat">Data Engineering & DevOps</span>
+          <span class="r-skill-list">Apache Airflow (ELT Pipelines), Git, GitHub Actions, Docker, Kubernetes, CI/CD, Linux</span>
+        </div>
+        <div class="r-skill-row">
+          <span class="r-skill-cat">Databases</span>
+          <span class="r-skill-list">PostgreSQL, MySQL, MongoDB (SQL & NoSQL), Redis, Cassandra</span>
+        </div>
+        <div class="r-skill-row">
+          <span class="r-skill-cat">AI & Productivity</span>
+          <span class="r-skill-list">Prompt Engineering (LLM-assisted development), Agentic AI, Jira (Agile/Scrum), Postman, Secure Coding</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Professional Experience ────────── -->
+    <section class="r-section">
+      <div class="r-section-title">Professional Experience</div>
+
+      <div class="r-job">
+        <div class="r-job-header">
+          <span class="r-job-title">Data Analyst</span>
+          <span class="r-job-meta">Nov 2025 – Present · New York, NY</span>
+        </div>
+        <div class="r-job-org">NYU Stern School of Business</div>
+        <ul>
+          <li>Conducted in-depth industry analysis and statistical modeling for benchmarking against peer institutions, translating complex findings into clear insights that informed data-driven resource reallocation.</li>
+          <li>Performed advanced SQL queries on massive institutional datasets to drive strategic enrollment planning and resource allocation.</li>
+          <li>Designed and maintained automated ELT pipelines using Python to streamline data blending, <strong>reducing manual data prep time by 25%</strong>.</li>
+          <li>Built and managed Tableau KPI dashboards to visualize operational metrics, <strong>improving decision-making speed for stakeholders by 15%</strong>.</li>
+          <li>Utilized AI-assisted prompt engineering to optimize Python scripts for statistical modeling and benchmarking against peer institutions.</li>
+        </ul>
+      </div>
+
+      <div class="r-job">
+        <div class="r-job-header">
+          <span class="r-job-title">Software Engineer</span>
+          <span class="r-job-meta">Apr 2024 – Jun 2025 · Mumbai, India</span>
+        </div>
+        <div class="r-job-org">SpeedBox</div>
+        <ul>
+          <li>Integrated RESTful APIs with React, Redux, and JavaScript, streamlining data flow between client and server — <strong>improved data retrieval efficiency by 15%</strong>.</li>
+          <li>Debugged and optimized front-end code by applying algorithmic problem-solving and data structure optimizations, <strong>boosting application performance by 20%</strong>.</li>
+          <li>Pre-processed and structured datasets in MongoDB using indexing and query optimization techniques, ensuring clean, query-ready data pipelines for seamless front-end rendering.</li>
+          <li>Designed and developed responsive UIs with React, HTML, CSS, and JavaScript — <strong>improving user engagement metrics by 18%</strong>.</li>
+          <li>Managed application state with Redux, implementing modular design and efficient memory management practices to enhance maintainability, fault tolerance, and scalability.</li>
+        </ul>
+      </div>
+
+      <div class="r-job">
+        <div class="r-job-header">
+          <span class="r-job-title">Web Developer Intern</span>
+          <span class="r-job-meta">Apr 2023 – Dec 2023 · Mumbai, India</span>
+        </div>
+        <div class="r-job-org">V S Sahil</div>
+        <ul>
+          <li>Developed and integrated RESTful APIs using React, Redux, JavaScript, and Spring Boot — <strong>reducing data fetch latency by 25%</strong>.</li>
+          <li>Pre-processed and managed data using MongoDB and PostgreSQL, ensuring clean and optimized front-end input, improving data accuracy and reducing query response time.</li>
+          <li>Built scalable and responsive UIs with React, HTML, CSS, and JS, applying OOP and low-level design principles to enhance usability and maintainability.</li>
+        </ul>
+      </div>
+
+      <div class="r-job">
+        <div class="r-job-header">
+          <span class="r-job-title">Data Analyst Intern</span>
+          <span class="r-job-meta">Dec 2022 – Mar 2023 · Mumbai, India</span>
+        </div>
+        <div class="r-job-org">Web Work</div>
+        <ul>
+          <li>Analyzed and cleaned large datasets using Python (Pandas, NumPy), Excel, and SQL to ensure data accuracy and reliability — <strong>improved reporting efficiency by 20%</strong>.</li>
+          <li>Developed and deployed interactive Tableau dashboards to visualize KPIs, enabling real-time business insights and supporting data-driven decision-making across multiple departments.</li>
+          <li>Collaborated with cross-functional teams in an Agile/Scrum environment to design and optimize data models using PostgreSQL and MongoDB — <strong>enhancing operational efficiency by 15%</strong>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── Research & Publications ─────────── -->
+    <section class="r-section">
+      <div class="r-section-title">Research &amp; Publications</div>
+      <div class="r-research">
+        <p><strong>Music Information Retrieval System using Deep Learning</strong> — Authored a research study developing CNN/RNN-based models to classify and retrieve music by genre, tempo, and rhythm. Applied MFCC and spectrogram feature extraction on large audio datasets, improving retrieval accuracy vs. traditional ML approaches. Published findings demonstrating scalable applications in recommendation engines and intelligent audio search systems.</p>
+      </div>
+    </section>
+
+    <!-- ── Projects ───────────────────────── -->
+    <section class="r-section">
+      <div class="r-section-title">Projects</div>
+
+      <div class="r-project">
+        <div class="r-project-title">
+          AI Resume Screener — Automated Candidate Ranking Tool
+          <span style="font-weight:400; color:#6b7280;"> · Python, NLP, spaCy, scikit-learn, Streamlit</span>
+          · <a href="https://github.com/pratham2888/AI-Resume-Screener" target="_blank">GitHub ↗</a>
+        </div>
+        <ul>
+          <li>Developed a Python-based AI application that extracts and parses resumes from PDF/DOCX using PyPDF2 and python-docx, enabling seamless multi-format processing.</li>
+          <li>Implemented NLP with spaCy and TF-IDF + cosine similarity in scikit-learn to evaluate and rank candidates against job descriptions, improving shortlisting accuracy and speed.</li>
+        </ul>
+      </div>
+
+      <div class="r-project">
+        <div class="r-project-title">
+          C Chatbot — Command-Line Conversational Program
+          <span style="font-weight:400; color:#6b7280;"> · C, Systems Programming, File I/O</span>
+          · <a href="https://github.com/pratham2888/C-Chatbot" target="_blank">GitHub ↗</a>
+        </div>
+        <ul>
+          <li>Built a command-line chatbot in C using string matching, file handling, and conditional logic to simulate conversation, demonstrating low-level systems programming fundamentals.</li>
+        </ul>
+      </div>
+
+      <div class="r-project">
+        <div class="r-project-title">State-Wide Hackathon Organizer <span style="font-weight:400; color:#6b7280;"> · Leadership, Event Planning</span></div>
+        <ul>
+          <li>Conducted and organized state-wide hackathons across Maharashtra, overseeing event logistics, judging innovative projects, and fostering tech collaboration.</li>
+        </ul>
+      </div>
+    </section>
+
+  </div><!-- /resume -->
+
 </body>
-
 </html>
