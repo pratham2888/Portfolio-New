@@ -1,0 +1,306 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0d1a"/>
+      <stop offset="100%" stop-color="#1a2340"/>
+    </linearGradient>
+    <linearGradient id="buildingL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2f45"/>
+      <stop offset="100%" stop-color="#1c2035"/>
+    </linearGradient>
+    <linearGradient id="buildingR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#242840"/>
+      <stop offset="100%" stop-color="#161a2e"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e2440"/>
+      <stop offset="100%" stop-color="#0d1020"/>
+    </linearGradient>
+    <linearGradient id="glowAmber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5a623" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#e8890a" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Stars pattern -->
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffbe6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f5a623" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="900" height="500" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <g opacity="0.7">
+    <circle cx="50" cy="30" r="1" fill="white" opacity="0.6"/>
+    <circle cx="120" cy="15" r="1.2" fill="white" opacity="0.8"/>
+    <circle cx="200" cy="45" r="0.8" fill="white" opacity="0.5"/>
+    <circle cx="310" cy="20" r="1" fill="white" opacity="0.7"/>
+    <circle cx="420" cy="10" r="1.3" fill="white" opacity="0.9"/>
+    <circle cx="500" cy="35" r="0.9" fill="white" opacity="0.6"/>
+    <circle cx="620" cy="18" r="1.1" fill="white" opacity="0.8"/>
+    <circle cx="700" cy="40" r="0.7" fill="white" opacity="0.5"/>
+    <circle cx="800" cy="25" r="1.2" fill="white" opacity="0.7"/>
+    <circle cx="860" cy="55" r="0.9" fill="white" opacity="0.6"/>
+    <circle cx="75" cy="70" r="0.8" fill="white" opacity="0.5"/>
+    <circle cx="170" cy="85" r="1" fill="white" opacity="0.6"/>
+    <circle cx="280" cy="60" r="0.7" fill="white" opacity="0.4"/>
+    <circle cx="560" cy="50" r="1" fill="white" opacity="0.7"/>
+    <circle cx="740" cy="70" r="0.8" fill="white" opacity="0.5"/>
+  </g>
+
+  <!-- Moon glow -->
+  <circle cx="810" cy="60" r="40" fill="url(#moonGlow)" opacity="0.15"/>
+  <circle cx="810" cy="60" r="18" fill="#fffbe6" opacity="0.12"/>
+
+  <!-- Distant city skyline silhouette -->
+  <g opacity="0.25" fill="#2a3050">
+    <rect x="0" y="200" width="30" height="200"/>
+    <rect x="20" y="170" width="20" height="230"/>
+    <rect x="50" y="185" width="25" height="215"/>
+    <rect x="820" y="190" width="30" height="210"/>
+    <rect x="850" y="175" width="22" height="225"/>
+    <rect x="870" y="195" width="30" height="205"/>
+  </g>
+
+  <!-- Ground / plaza -->
+  <rect x="0" y="390" width="900" height="110" fill="url(#ground)"/>
+  <!-- Plaza lines (perspective) -->
+  <g stroke="#2a3060" stroke-width="0.5" opacity="0.5">
+    <line x1="450" y1="390" x2="0" y2="500"/>
+    <line x1="450" y1="390" x2="900" y2="500"/>
+    <line x1="450" y1="390" x2="150" y2="500"/>
+    <line x1="450" y1="390" x2="750" y2="500"/>
+    <line x1="450" y1="390" x2="300" y2="500"/>
+    <line x1="450" y1="390" x2="600" y2="500"/>
+  </g>
+
+  <!-- ========== MAIN BUILDING (KMC - Henry Kaufman) CENTER ========== -->
+  <!-- Base structure -->
+  <rect x="280" y="120" width="340" height="275" fill="url(#buildingL)" rx="2"/>
+
+  <!-- Facade grid overlay -->
+  <rect x="280" y="120" width="340" height="275" fill="none" stroke="#3a4060" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Horizontal floor lines -->
+  <g stroke="#3a4060" stroke-width="0.6" opacity="0.5">
+    <line x1="280" y1="155" x2="620" y2="155"/>
+    <line x1="280" y1="190" x2="620" y2="190"/>
+    <line x1="280" y1="225" x2="620" y2="225"/>
+    <line x1="280" y1="260" x2="620" y2="260"/>
+    <line x1="280" y1="295" x2="620" y2="295"/>
+    <line x1="280" y1="330" x2="620" y2="330"/>
+    <line x1="280" y1="360" x2="620" y2="360"/>
+  </g>
+
+  <!-- Vertical column lines -->
+  <g stroke="#3a4060" stroke-width="0.6" opacity="0.5">
+    <line x1="325" y1="120" x2="325" y2="395"/>
+    <line x1="370" y1="120" x2="370" y2="395"/>
+    <line x1="415" y1="120" x2="415" y2="395"/>
+    <line x1="450" y1="120" x2="450" y2="395"/>
+    <line x1="485" y1="120" x2="485" y2="395"/>
+    <line x1="530" y1="120" x2="530" y2="395"/>
+    <line x1="575" y1="120" x2="575" y2="395"/>
+  </g>
+
+  <!-- Windows - amber lit -->
+  <g filter="url(#glow)">
+    <!-- Floor 1 windows -->
+    <rect x="292" y="165" width="18" height="14" fill="#f5a623" opacity="0.85" rx="1"/>
+    <rect x="316" y="165" width="18" height="14" fill="#f5a623" opacity="0.6" rx="1"/>
+    <rect x="340" y="165" width="18" height="14" fill="#f5a623" opacity="0.9" rx="1"/>
+    <rect x="364" y="165" width="18" height="14" fill="#f5a623" opacity="0.5" rx="1"/>
+    <rect x="388" y="165" width="18" height="14" fill="#f5a623" opacity="0.75" rx="1"/>
+    <rect x="422" y="165" width="18" height="14" fill="#f5a623" opacity="0.9" rx="1"/>
+    <rect x="456" y="165" width="18" height="14" fill="#f5a623" opacity="0.65" rx="1"/>
+    <rect x="490" y="165" width="18" height="14" fill="#f5a623" opacity="0.8" rx="1"/>
+    <rect x="524" y="165" width="18" height="14" fill="#f5a623" opacity="0.4" rx="1"/>
+    <rect x="558" y="165" width="18" height="14" fill="#f5a623" opacity="0.85" rx="1"/>
+    <rect x="590" y="165" width="18" height="14" fill="#f5a623" opacity="0.7" rx="1"/>
+
+    <!-- Floor 2 windows -->
+    <rect x="292" y="200" width="18" height="14" fill="#f5a623" opacity="0.6" rx="1"/>
+    <rect x="316" y="200" width="18" height="14" fill="#f5a623" opacity="0.9" rx="1"/>
+    <rect x="340" y="200" width="18" height="14" fill="#f5a623" opacity="0.4" rx="1"/>
+    <rect x="364" y="200" width="18" height="14" fill="#f5a623" opacity="0.85" rx="1"/>
+    <rect x="388" y="200" width="18" height="14" fill="#f5a623" opacity="0.7" rx="1"/>
+    <rect x="422" y="200" width="18" height="14" fill="#f5a623" opacity="0.5" rx="1"/>
+    <rect x="456" y="200" width="18" height="14" fill="#f5a623" opacity="0.9" rx="1"/>
+    <rect x="490" y="200" width="18" height="14" fill="#f5a623" opacity="0.75" rx="1"/>
+    <rect x="524" y="200" width="18" height="14" fill="#f5a623" opacity="0.85" rx="1"/>
+    <rect x="558" y="200" width="18" height="14" fill="#f5a623" opacity="0.45" rx="1"/>
+    <rect x="590" y="200" width="18" height="14" fill="#f5a623" opacity="0.8" rx="1"/>
+
+    <!-- Floor 3 windows -->
+    <rect x="292" y="235" width="18" height="14" fill="#f5a623" opacity="0.8" rx="1"/>
+    <rect x="316" y="235" width="18" height="14" fill="#f5a623" opacity="0.5" rx="1"/>
+    <rect x="340" y="235" width="18" height="14" fill="#f5a623" opacity="0.9" rx="1"/>
+    <rect x="364" y="235" width="18" height="14" fill="#f5a623" opacity="0.65" rx="1"/>
+    <rect x="388" y="235" width="18" height="14" fill="#f5a623" opacity="0.4" rx="1"/>
+    <rect x="422" y="235" width="18" height="14" fill="#f5a623" opacity="0.85" rx="1"/>
+    <rect x="456" y="235" width="18" height="14" fill="#f5a623" opacity="0.7" rx="1"/>
+    <rect x="490" y="235" width="18" height="14" fill="#f5a623" opacity="0.9" rx="1"/>
+    <rect x="524" y="235" width="18" height="14" fill="#f5a623" opacity="0.55" rx="1"/>
+    <rect x="558" y="235" width="18" height="14" fill="#f5a623" opacity="0.8" rx="1"/>
+    <rect x="590" y="235" width="18" height="14" fill="#f5a623" opacity="0.6" rx="1"/>
+
+    <!-- Floor 4 windows -->
+    <rect x="292" y="270" width="18" height="14" fill="#f5a623" opacity="0.5" rx="1"/>
+    <rect x="316" y="270" width="18" height="14" fill="#f5a623" opacity="0.8" rx="1"/>
+    <rect x="340" y="270" width="18" height="14" fill="#f5a623" opacity="0.65" rx="1"/>
+    <rect x="364" y="270" width="18" height="14" fill="#f5a623" opacity="0.9" rx="1"/>
+    <rect x="388" y="270" width="18" height="14" fill="#f5a623" opacity="0.4" rx="1"/>
+    <rect x="422" y="270" width="18" height="14" fill="#f5a623" opacity="0.75" rx="1"/>
+    <rect x="456" y="270" width="18" height="14" fill="#f5a623" opacity="0.85" rx="1"/>
+    <rect x="490" y="270" width="18" height="14" fill="#f5a623" opacity="0.5" rx="1"/>
+    <rect x="524" y="270" width="18" height="14" fill="#f5a623" opacity="0.7" rx="1"/>
+    <rect x="558" y="270" width="18" height="14" fill="#f5a623" opacity="0.9" rx="1"/>
+    <rect x="590" y="270" width="18" height="14" fill="#f5a623" opacity="0.6" rx="1"/>
+
+    <!-- Floor 5 windows -->
+    <rect x="292" y="305" width="18" height="14" fill="#f5a623" opacity="0.85" rx="1"/>
+    <rect x="316" y="305" width="18" height="14" fill="#f5a623" opacity="0.45" rx="1"/>
+    <rect x="340" y="305" width="18" height="14" fill="#f5a623" opacity="0.75" rx="1"/>
+    <rect x="364" y="305" width="18" height="14" fill="#f5a623" opacity="0.6" rx="1"/>
+    <rect x="388" y="305" width="18" height="14" fill="#f5a623" opacity="0.9" rx="1"/>
+    <rect x="422" y="305" width="18" height="14" fill="#f5a623" opacity="0.5" rx="1"/>
+    <rect x="456" y="305" width="18" height="14" fill="#f5a623" opacity="0.8" rx="1"/>
+    <rect x="490" y="305" width="18" height="14" fill="#f5a623" opacity="0.65" rx="1"/>
+    <rect x="524" y="305" width="18" height="14" fill="#f5a623" opacity="0.4" rx="1"/>
+    <rect x="558" y="305" width="18" height="14" fill="#f5a623" opacity="0.85" rx="1"/>
+    <rect x="590" y="305" width="18" height="14" fill="#f5a623" opacity="0.7" rx="1"/>
+
+    <!-- Floor 6 windows (partial lit) -->
+    <rect x="292" y="338" width="18" height="14" fill="#f5a623" opacity="0.3" rx="1"/>
+    <rect x="340" y="338" width="18" height="14" fill="#f5a623" opacity="0.6" rx="1"/>
+    <rect x="388" y="338" width="18" height="14" fill="#f5a623" opacity="0.4" rx="1"/>
+    <rect x="456" y="338" width="18" height="14" fill="#f5a623" opacity="0.7" rx="1"/>
+    <rect x="524" y="338" width="18" height="14" fill="#f5a623" opacity="0.35" rx="1"/>
+    <rect x="590" y="338" width="18" height="14" fill="#f5a623" opacity="0.55" rx="1"/>
+  </g>
+
+  <!-- Ground floor entrance - lobby illuminated -->
+  <rect x="370" y="350" width="160" height="45" fill="#f5a623" opacity="0.15" rx="2"/>
+  <rect x="390" y="350" width="50" height="45" fill="#f5a623" opacity="0.25" rx="1"/>
+  <rect x="460" y="350" width="50" height="45" fill="#f5a623" opacity="0.2" rx="1"/>
+  <!-- Entrance doors -->
+  <rect x="395" y="358" width="20" height="37" fill="#f5a623" opacity="0.4" rx="1"/>
+  <rect x="420" y="358" width="20" height="37" fill="#f5a623" opacity="0.35" rx="1"/>
+  <rect x="465" y="358" width="20" height="37" fill="#f5a623" opacity="0.4" rx="1"/>
+  <rect x="490" y="358" width="20" height="37" fill="#f5a623" opacity="0.3" rx="1"/>
+
+  <!-- Lobby light spill on ground -->
+  <ellipse cx="450" cy="395" rx="120" ry="12" fill="#f5a623" opacity="0.08"/>
+
+  <!-- ========== LEFT WING (Shimkin/Tisch) ========== -->
+  <rect x="100" y="175" width="195" height="220" fill="url(#buildingR)" rx="2"/>
+  <g stroke="#2a3050" stroke-width="0.5" opacity="0.4">
+    <line x1="100" y1="205" x2="295" y2="205"/>
+    <line x1="100" y1="240" x2="295" y2="240"/>
+    <line x1="100" y1="275" x2="295" y2="275"/>
+    <line x1="100" y1="310" x2="295" y2="310"/>
+    <line x1="100" y1="345" x2="295" y2="345"/>
+    <line x1="135" y1="175" x2="135" y2="395"/>
+    <line x1="170" y1="175" x2="170" y2="395"/>
+    <line x1="205" y1="175" x2="205" y2="395"/>
+    <line x1="240" y1="175" x2="240" y2="395"/>
+    <line x1="270" y1="175" x2="270" y2="395"/>
+  </g>
+  <!-- Left wing windows - dimmer -->
+  <g filter="url(#glow)" opacity="0.7">
+    <rect x="108" y="213" width="16" height="12" fill="#f5a623" opacity="0.5" rx="1"/>
+    <rect x="130" y="213" width="16" height="12" fill="#f5a623" opacity="0.3" rx="1"/>
+    <rect x="152" y="213" width="16" height="12" fill="#f5a623" opacity="0.6" rx="1"/>
+    <rect x="174" y="213" width="16" height="12" fill="#f5a623" opacity="0.4" rx="1"/>
+    <rect x="212" y="213" width="16" height="12" fill="#f5a623" opacity="0.55" rx="1"/>
+    <rect x="246" y="213" width="16" height="12" fill="#f5a623" opacity="0.35" rx="1"/>
+    <rect x="269" y="213" width="16" height="12" fill="#f5a623" opacity="0.5" rx="1"/>
+
+    <rect x="108" y="248" width="16" height="12" fill="#f5a623" opacity="0.35" rx="1"/>
+    <rect x="152" y="248" width="16" height="12" fill="#f5a623" opacity="0.5" rx="1"/>
+    <rect x="196" y="248" width="16" height="12" fill="#f5a623" opacity="0.4" rx="1"/>
+    <rect x="246" y="248" width="16" height="12" fill="#f5a623" opacity="0.6" rx="1"/>
+    <rect x="269" y="248" width="16" height="12" fill="#f5a623" opacity="0.3" rx="1"/>
+
+    <rect x="108" y="283" width="16" height="12" fill="#f5a623" opacity="0.55" rx="1"/>
+    <rect x="130" y="283" width="16" height="12" fill="#f5a623" opacity="0.4" rx="1"/>
+    <rect x="174" y="283" width="16" height="12" fill="#f5a623" opacity="0.5" rx="1"/>
+    <rect x="212" y="283" width="16" height="12" fill="#f5a623" opacity="0.3" rx="1"/>
+    <rect x="269" y="283" width="16" height="12" fill="#f5a623" opacity="0.45" rx="1"/>
+
+    <rect x="130" y="318" width="16" height="12" fill="#f5a623" opacity="0.3" rx="1"/>
+    <rect x="196" y="318" width="16" height="12" fill="#f5a623" opacity="0.45" rx="1"/>
+    <rect x="246" y="318" width="16" height="12" fill="#f5a623" opacity="0.35" rx="1"/>
+  </g>
+
+  <!-- ========== RIGHT WING ========== -->
+  <rect x="605" y="175" width="195" height="220" fill="url(#buildingR)" rx="2"/>
+  <g stroke="#2a3050" stroke-width="0.5" opacity="0.4">
+    <line x1="605" y1="205" x2="800" y2="205"/>
+    <line x1="605" y1="240" x2="800" y2="240"/>
+    <line x1="605" y1="275" x2="800" y2="275"/>
+    <line x1="605" y1="310" x2="800" y2="310"/>
+    <line x1="605" y1="345" x2="800" y2="345"/>
+    <line x1="630" y1="175" x2="630" y2="395"/>
+    <line x1="660" y1="175" x2="660" y2="395"/>
+    <line x1="695" y1="175" x2="695" y2="395"/>
+    <line x1="730" y1="175" x2="730" y2="395"/>
+    <line x1="763" y1="175" x2="763" y2="395"/>
+  </g>
+  <g filter="url(#glow)" opacity="0.7">
+    <rect x="612" y="213" width="16" height="12" fill="#f5a623" opacity="0.4" rx="1"/>
+    <rect x="634" y="213" width="16" height="12" fill="#f5a623" opacity="0.6" rx="1"/>
+    <rect x="663" y="213" width="16" height="12" fill="#f5a623" opacity="0.35" rx="1"/>
+    <rect x="699" y="213" width="16" height="12" fill="#f5a623" opacity="0.55" rx="1"/>
+    <rect x="733" y="213" width="16" height="12" fill="#f5a623" opacity="0.4" rx="1"/>
+    <rect x="765" y="213" width="16" height="12" fill="#f5a623" opacity="0.5" rx="1"/>
+    <rect x="783" y="213" width="16" height="12" fill="#f5a623" opacity="0.3" rx="1"/>
+
+    <rect x="612" y="248" width="16" height="12" fill="#f5a623" opacity="0.5" rx="1"/>
+    <rect x="663" y="248" width="16" height="12" fill="#f5a623" opacity="0.35" rx="1"/>
+    <rect x="699" y="248" width="16" height="12" fill="#f5a623" opacity="0.6" rx="1"/>
+    <rect x="765" y="248" width="16" height="12" fill="#f5a623" opacity="0.4" rx="1"/>
+    <rect x="783" y="248" width="16" height="12" fill="#f5a623" opacity="0.55" rx="1"/>
+
+    <rect x="634" y="283" width="16" height="12" fill="#f5a623" opacity="0.45" rx="1"/>
+    <rect x="699" y="283" width="16" height="12" fill="#f5a623" opacity="0.3" rx="1"/>
+    <rect x="733" y="283" width="16" height="12" fill="#f5a623" opacity="0.5" rx="1"/>
+    <rect x="783" y="283" width="16" height="12" fill="#f5a623" opacity="0.4" rx="1"/>
+
+    <rect x="612" y="318" width="16" height="12" fill="#f5a623" opacity="0.35" rx="1"/>
+    <rect x="663" y="318" width="16" height="12" fill="#f5a623" opacity="0.5" rx="1"/>
+    <rect x="765" y="318" width="16" height="12" fill="#f5a623" opacity="0.3" rx="1"/>
+  </g>
+
+  <!-- NYU Stern sign on building -->
+  <rect x="370" y="128" width="160" height="28" fill="#57068c" opacity="0.9" rx="3"/>
+  <text x="450" y="147" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="2">NYU STERN</text>
+
+  <!-- Connecting walkway / concourse between buildings -->
+  <rect x="293" y="355" width="315" height="8" fill="#1e2440" opacity="0.8"/>
+
+  <!-- Street lamps -->
+  <g fill="#f5a623" filter="url(#softglow)">
+    <circle cx="230" cy="385" r="6" opacity="0.5"/>
+    <rect x="229" y="385" width="2" height="12" fill="#8a9ab0"/>
+    <circle cx="680" cy="385" r="6" opacity="0.5"/>
+    <rect x="679" y="385" width="2" height="12" fill="#8a9ab0"/>
+  </g>
+
+  <!-- Ambient amber glow on ground from building -->
+  <ellipse cx="450" cy="400" rx="280" ry="30" fill="#f5a623" opacity="0.04" filter="url(#softglow)"/>
+
+  <!-- "NYU Stern School of Business" caption -->
+  <rect x="0" y="458" width="900" height="42" fill="rgba(7,9,15,0.7)"/>
+  <text x="450" y="476" font-family="Arial, sans-serif" font-size="11" fill="#6b7592" text-anchor="middle" letter-spacing="3">HENRY KAUFMAN MANAGEMENT CENTER</text>
+  <text x="450" y="493" font-family="Arial, sans-serif" font-size="10" fill="#f5a623" text-anchor="middle" letter-spacing="2">NYU STERN SCHOOL OF BUSINESS · 44 WEST 4TH STREET, NEW YORK</text>
+</svg>

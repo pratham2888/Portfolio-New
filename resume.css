@@ -1,0 +1,11 @@
+body {
+    text-align: center and justify;
+    margin: auto;
+    width: 100%;
+    padding: 50px;
+    font-family: "times new roman";
+    background-color: white;
+    --nav-height: 50px;
+    padding-top: var(--nav-height);
+    font-size: medium;
+}
